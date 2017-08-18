@@ -7,8 +7,8 @@ export const Material = ({ onChange, hex, rgb, className = '' }) => {
   const styles = reactCSS({
     'default': {
       material: {
-        width: '98px',
-        height: '98px',
+        width: '110px',
+        height: '110px',
         padding: '8px',
         fontFamily: 'Roboto',
       },

@@ -1,16 +1,16 @@
 {
-  "name": "react-color",
-  "version": "2.13.6",
-  "description": "A Collection of Color Pickers from Sketch, Photoshop, Chrome & more",
+  "name": "react-color-materialui-popover",
+  "version": "1.0.2",
+  "description": "Popover-Friendly Fork of Color Picker for material-ui",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/casesandberg/react-color.git"
+    "url": "git+https://github.com/mc-funk/react-color-materialui-popover"
   },
   "author": "case <case@casesandberg.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/casesandberg/react-color/issues"
+    "url": "https://github.com/mc-funk/react-color-materialui-popover/issues"
   },
   "scripts": {
     "unit-test": "node_modules/.bin/mocha \"test/**/*.test.js\" --compilers js:babel-register",
@@ -27,7 +27,7 @@
     "docs-dist": "node ./scripts/docs-dist",
     "storybook": "start-storybook -p 6006"
   },
-  "homepage": "http://casesandberg.github.io/react-color/",
+  "homepage": "https://github.com/mc-funk/react-color-materialui-popover",
   "keywords": [
     "react",
     "color picker",

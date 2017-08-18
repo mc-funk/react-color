@@ -1,3 +1,6 @@
+This fork adjusts the MaterialPicker component so that it can be used inside of
+a material-ui Popover element.
+
 # [React Color](http://casesandberg.github.io/react-color/)
 
 [![Build Status][travis-svg]][travis-url]

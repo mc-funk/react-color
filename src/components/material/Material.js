@@ -1,8 +1,6 @@
 import React from 'react'
 import reactCSS from 'reactcss'
 import color from '../../helpers/color'
-
-import { Raised } from '../../../modules/react-material-design'
 import { ColorWrap, EditableInput } from '../common'
 
 export const Material = ({ onChange, hex, rgb, className = '' }) => {
@@ -11,7 +9,7 @@ export const Material = ({ onChange, hex, rgb, className = '' }) => {
       material: {
         width: '98px',
         height: '98px',
-        padding: '16px',
+        padding: '8px',
         fontFamily: 'Roboto',
       },
       HEXwrap: {
@@ -92,41 +90,39 @@ export const Material = ({ onChange, hex, rgb, className = '' }) => {
   }
 
   return (
-    <Raised>
-      <div style={ styles.material } className={ `material-picker ${ className }` }>
-        <EditableInput
-          style={{ wrap: styles.HEXwrap, input: styles.HEXinput, label: styles.HEXlabel }}
-          label="hex"
-          value={ hex }
-          onChange={ handleChange }
-        />
-        <div style={ styles.split } className="flexbox-fix">
-          <div style={ styles.third }>
-            <EditableInput
-              style={{ wrap: styles.RGBwrap, input: styles.RGBinput, label: styles.RGBlabel }}
-              label="r" value={ rgb.r }
-              onChange={ handleChange }
-            />
-          </div>
-          <div style={ styles.third }>
-            <EditableInput
-              style={{ wrap: styles.RGBwrap, input: styles.RGBinput, label: styles.RGBlabel }}
-              label="g"
-              value={ rgb.g }
-              onChange={ handleChange }
-            />
-          </div>
-          <div style={ styles.third }>
-            <EditableInput
-              style={{ wrap: styles.RGBwrap, input: styles.RGBinput, label: styles.RGBlabel }}
-              label="b"
-              value={ rgb.b }
-              onChange={ handleChange }
-            />
-          </div>
+    <div style={ styles.material } className={ `material-picker ${ className }` }>
+      <EditableInput
+        style={{ wrap: styles.HEXwrap, input: styles.HEXinput, label: styles.HEXlabel }}
+        label="hex"
+        value={ hex }
+        onChange={ handleChange }
+      />
+      <div style={ styles.split } className="flexbox-fix">
+        <div style={ styles.third }>
+          <EditableInput
+            style={{ wrap: styles.RGBwrap, input: styles.RGBinput, label: styles.RGBlabel }}
+            label="r" value={ rgb.r }
+            onChange={ handleChange }
+          />
+        </div>
+        <div style={ styles.third }>
+          <EditableInput
+            style={{ wrap: styles.RGBwrap, input: styles.RGBinput, label: styles.RGBlabel }}
+            label="g"
+            value={ rgb.g }
+            onChange={ handleChange }
+          />
+        </div>
+        <div style={ styles.third }>
+          <EditableInput
+            style={{ wrap: styles.RGBwrap, input: styles.RGBinput, label: styles.RGBlabel }}
+            label="b"
+            value={ rgb.b }
+            onChange={ handleChange }
+          />
         </div>
       </div>
-    </Raised>
+    </div>
   )
 }
 

@@ -1,6 +1,6 @@
 {
   "name": "react-color-materialui-popover",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Popover-Friendly Fork of Color Picker for material-ui",
   "main": "lib/index.js",
   "repository": {
